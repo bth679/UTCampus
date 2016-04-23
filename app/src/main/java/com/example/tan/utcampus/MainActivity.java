@@ -1,18 +1,22 @@
 package com.example.tan.utcampus;
 
 import android.content.Intent;
+import android.provider.MediaStore;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
+import android.media.MediaPlayer;
 
 public class MainActivity extends AppCompatActivity {
 
     Spinner spinner;
     String SpinnerValue;
     Intent i;
+
+    MediaPlayer player;
 
     private String[] options = { "Please Select Something", "Introduction to Campus", "Main Buildings and Location to Campus", "Listen to UT fight song"};
     @Override

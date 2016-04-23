@@ -7,6 +7,77 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.tan.utcampus.musicActivity">
+    tools:context="com.example.tan.utcampus.musicActivity"
+    android:background="#f28046">
+
+    <TextView
+        android:id="@+id/songDuration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="songDuration"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/songName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="songName"
+        android:layout_above="@+id/songDuration"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="54dp"
+        android:textStyle="bold"
+        android:textColor="#ffffff" />
+
+    <SeekBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBar"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/songDuration"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14dp"
+        android:onClick="rewind"
+        android:src="@android:drawable/ic_media_rew"
+        android:layout_below="@+id/seekBar"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="58dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="pause"
+        android:src="@android:drawable/ic_media_pause"
+        android:layout_marginStart="26dp"
+        android:layout_alignTop="@+id/imageButton"
+        android:layout_toEndOf="@+id/imageButton" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="play"
+        android:src="@android:drawable/ic_media_play"
+        android:layout_alignTop="@+id/imageButton2"
+        android:layout_toEndOf="@+id/imageButton2"
+        android:layout_marginStart="28dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="forward"
+        android:src="@android:drawable/ic_media_ff"
+        android:layout_alignTop="@+id/imageButton3"
+        android:layout_alignParentEnd="true" />
 
 </RelativeLayout>
