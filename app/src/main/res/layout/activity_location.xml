@@ -9,4 +9,22 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.tan.utcampus.locationActivity">
 
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textAppearance="?android:attr/textAppearanceLarge"
+    android:text="Main buildings and locations"
+    android:id="@+id/locations"
+    android:textColor="#df3737"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true" />
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner2"
+        android:spinnerMode="dropdown"
+        android:layout_below="@+id/locations"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="98dp" />
+
 </RelativeLayout>

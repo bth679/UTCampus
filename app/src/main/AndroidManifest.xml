@@ -17,6 +17,7 @@
         </activity>
         <activity android:name=".introductionActivity" />
         <activity android:name=".locationActivity" />
+        <activity android:name=".pclwebview" />
         <activity android:name=".musicActivity"></activity>
     </application>
 
